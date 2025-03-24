@@ -26,7 +26,7 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/forms', function () {
         return view('forms');
-    })->name('forms');
+    })->name('form');
 
     Route::get('/modals', function () {
         return view('modals');
