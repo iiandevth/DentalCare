@@ -2,39 +2,20 @@
 
 @section('content')
     <main class="h-full overflow-y-auto">
-        <div class="container px-6 mx-auto grid">
+        <div class="container px-9 mx-auto grid">
         <h2
             class="my-6 text-2xl font-semibold text-gray-700 dark:text-gray-200"
         >
-            Dashboard
+            DASHBOARD
         </h2>
-        <!-- CTA -->
-        <a
-            class="flex items-center justify-between p-4 mb-8 text-sm font-semibold text-purple-100 bg-purple-600 rounded-lg shadow-md focus:outline-none focus:shadow-outline-purple"
-            href="{{ route('forms') }}"
-        >
-            <div class="flex items-center">
-            <svg
-                class="w-5 h-5 mr-2"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-            >
-                <path
-                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                ></path>
-            </svg>
-            <span> Hello guys :3 Ready na ni for editing. Refer lang sa guides sa side-bar.</span>
-            </div>
-            <span>View more &RightArrow;</span>
-        </a>
         <!-- Cards -->
-        <div class="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-4">
+        <div class="grid gap-6 mb-8 md:grid-cols-2 xl:grid-cols-8">
             <!-- Card -->
             <div
-            class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
+            class="flex items-center p-6 bg-white rounded-lg shadow-xs dark:bg-gray-800"
             >
             <div
-                class="p-3 mr-4 text-orange-500 bg-orange-100 rounded-full dark:text-orange-100 dark:bg-orange-500"
+                class="p-6 mr-6 text-orange-500 bg-orange-100 rounded-full dark:text-orange-100 dark:bg-orange-500"
             >
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path
@@ -46,7 +27,7 @@
                 <p
                 class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
                 >
-                Total Customer
+                Total Patient Registered
                 </p>
                 <p
                 class="text-lg font-semibold text-gray-700 dark:text-gray-200"
@@ -55,12 +36,13 @@
                 </p>
             </div>
             </div>
+            
             <!-- Card -->
             <div
             class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
             >
             <div
-                class="p-3 mr-4 text-green-500 bg-green-100 rounded-full dark:text-green-100 dark:bg-green-500"
+                class="p-6 mr-6 text-green-500 bg-green-100 rounded-full dark:text-green-100 dark:bg-green-500"
             >
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path
@@ -74,12 +56,12 @@
                 <p
                 class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
                 >
-                Account balance
+                Total Appointments
                 </p>
                 <p
                 class="text-lg font-semibold text-gray-700 dark:text-gray-200"
                 >
-                $ 46,760.89
+                20
                 </p>
             </div>
             </div>
@@ -88,7 +70,7 @@
             class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
             >
             <div
-                class="p-3 mr-4 text-blue-500 bg-blue-100 rounded-full dark:text-blue-100 dark:bg-blue-500"
+                class="p-6 mr-6 text-blue-500 bg-blue-100 rounded-full dark:text-blue-100 dark:bg-blue-500"
             >
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path
@@ -100,7 +82,7 @@
                 <p
                 class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
                 >
-                New Customer
+                Total History
                 </p>
                 <p
                 class="text-lg font-semibold text-gray-700 dark:text-gray-200"
@@ -114,7 +96,7 @@
             class="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
             >
             <div
-                class="p-3 mr-4 text-teal-500 bg-teal-100 rounded-full dark:text-teal-100 dark:bg-teal-500"
+                class="p-6 mr-6 text-teal-500 bg-teal-100 rounded-full dark:text-teal-100 dark:bg-teal-500"
             >
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path
@@ -128,7 +110,7 @@
                 <p
                 class="mb-2 text-sm font-medium text-gray-600 dark:text-gray-400"
                 >
-                Pending contacts
+                Total Inventory
                 </p>
                 <p
                 class="text-lg font-semibold text-gray-700 dark:text-gray-200"
@@ -137,33 +119,6 @@
                 </p>
             </div>
             </div>
-        </div>
-        <div
-        class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
-            >
-            <h4 class="mb-4 font-semibold text-gray-800 dark:text-gray-300">
-                Weekly Revenue Sales Report
-            </h4>
-            <canvas id="line"></canvas>
-            <div
-                class="flex justify-center mt-4 space-x-3 text-sm text-gray-600 dark:text-gray-400"
-            >
-                <!-- Chart legend -->
-                <div class="flex items-center">
-                <span
-                    class="inline-block w-3 h-3 mr-1 bg-teal-600 rounded-full"
-                ></span>
-                <span>Round Gallon</span>
-                </div>
-                <div class="flex items-center">
-                <span
-                    class="inline-block w-3 h-3 mr-1 bg-purple-600 rounded-full"
-                ></span>
-                <span>Paid</span>
-                </div>
-                </div>  
-
-        
             </div>
             </div>
             </div>
